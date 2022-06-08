@@ -8,7 +8,7 @@ export const apiCall = async () => {
         console.log('results', results);
         const jsonResults = await results.json();
         console.log('jsonResults', jsonResults);
-        app.get("http://localhost:3000/articles", function(req, res) {
+        app.get("/articles", function(req, res) {
             res.send(jsonResults);
         }); 
         // return jsonResults

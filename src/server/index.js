@@ -2,8 +2,10 @@
 import express from "express";
 // const apiCall = require("./apiCall");
 import { apiCall } from "./apiCall.js";
+import cors from 'cors'
 
 export const app = express(); //create an object (Express app) 
+app.use(cors());
 const port = 5000;
 
 app.use(express.json()); 
